@@ -1,4 +1,5 @@
 import './Profile.css';
+import { Link } from 'react-router-dom';
 import Image from "./image/photo_2025-12-27_10-42-20.jpg"
 
 export const Profile = (props) => {
@@ -40,7 +41,7 @@ export const Profile = (props) => {
           </div>
 
            <div className="buttons">
-            <button className="btn-edit">ویرایش پروفایل</button>
+            <Link to={"/change"}> <button className="btn-edit">ویرایش پروفایل</button></Link>
             <button className="btn-setting">تنظیمات</button>
           </div>
         </div>

@@ -5,6 +5,7 @@ import { Home } from "./pages/Home/home";
 import { About } from "./pages/About/about";
 import { Profile } from "./pages/Profile/profile";
 import { Nav } from "./Nav/Nav";
+import { Change } from "./Change-prof/ChangeProfile";
  function App() {
   const [name , setName] = useState("amin-gholipour")
    return (
@@ -15,6 +16,10 @@ import { Nav } from "./Nav/Nav";
           <Route path="/" element={<Home UserName={name} ></Home>}></Route>
           <Route path="/About" element={<About></About>}></Route>
           <Route path="/Profile" element={<Profile UserName={name}></Profile>}></Route>
+          <Route path="/change" element={
+            <Change UserName={name} setName={setName}></Change>}>
+          </Route>
+
         </Routes>
        </Router>
     </div>
