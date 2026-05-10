@@ -15,14 +15,14 @@ export const Profile = (props) => {
 
          <div className="profile-info">
           <h2> {props.UserName}  </h2>
-          <p className="username">https://github.com/amingholipoor5327-oss</p>
+          <p className="username">{props.Github}</p>
           <p className="bio">
             توسعه‌دهنده فرانت‌اند | React و JavaScript
           </p>
           
           <div className="details">
-            <p>📧 amingholipoor1@gmail.com</p>
-            <p>📍 Iran-Tehran-Fars  </p>
+            <p>📧{props.Email} </p>
+            <p>📍{props.Addres}  </p>
            </div>
 
            <div className="stats">
