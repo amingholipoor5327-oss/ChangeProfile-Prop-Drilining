@@ -1,4 +1,5 @@
 import { useState } from "react"
+import { Link } from "react-router-dom"
 
 export const Change = (props)=>{
     const [changename , setChangename] = useState()
@@ -37,6 +38,9 @@ export const Change = (props)=>{
           onChange={(event)=>{setChangegit(event.target.value)}}>
           </input>
         <button onClick={()=>{props.setGithub(changegit)}}>ویرایش گیت   </button>
+        </div>
+        <div>
+            <Link to={"/"}>close</Link>
         </div>
         </div>
 

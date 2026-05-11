@@ -17,7 +17,7 @@ import { Change } from "./Change-prof/ChangeProfile";
        <Router>
         <Nav></Nav>
         <Routes>
-          <Route path="/" element={<Home UserName={name} ></Home>}></Route>
+          <Route path="/" element={<Home UserName={name}   Email={email}></Home>}></Route>
           <Route path="/About" element={<About></About>}></Route>
 
           <Route path="/Profile" element={
