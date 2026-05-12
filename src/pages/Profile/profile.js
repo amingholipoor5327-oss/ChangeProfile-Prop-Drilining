@@ -7,10 +7,10 @@ export const Profile = (props) => {
     <div className="profile-container">
       <div className="profile-card">
          <div className="profile-avatar">
-          <img 
-            src={Image} 
-            alt="Profile"
-          />
+        <img 
+          src={props.avatar || Image} 
+           alt="Profile"
+        />
         </div>
 
          <div className="profile-info">

@@ -10,7 +10,7 @@ export const Change = (props) => {
   const [changefollow, setChangefollow] = useState("");
   const [changefollower, setChangefollower] = useState("");
   const [changeproject, setChangeproject] = useState("");
-
+  const [tempAvatar, setTempAvatar] = useState(null);
   return (
     <div className="change-container">
       <div className="form-group">
@@ -47,6 +47,26 @@ export const Change = (props) => {
         <input type="text" placeholder="project..." onChange={(event) => setChangeproject(event.target.value)} />
         <button onClick={() => props.setProject(changeproject)}>ویرایش پروژه</button>
       </div>
+      
+      <div className="form-group">
+  <input 
+    type="file" 
+    accept="image/*"
+    onChange={(event) => {
+      const file = event.target.files[0];
+      if (file) {
+        const imageUrl = URL.createObjectURL(file);
+        setTempAvatar(imageUrl);
+      }
+    }}
+  />
+  <button onClick={() => {
+    if (tempAvatar) {
+      props.setAvatar(tempAvatar);
+    }
+  }}>تغییر عکس</button>
+</div>
+        
       <Link to={"/"} className="close-link">close</Link>
     </div>
   );
