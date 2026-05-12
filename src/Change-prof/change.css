@@ -1,6 +1,3 @@
- /* Change.css */
-
-/* ظرف اصلی */
 .change-container {
   max-width: 500px;
   margin: 50px auto;
@@ -11,8 +8,7 @@
   font-family: 'Vazir', 'B Nazanin', sans-serif;
 }
 
-/* هر فیلد */
-.form-group {
+ .form-group {
   margin-bottom: 20px;
   display: flex;
   gap: 10px;
@@ -20,8 +16,7 @@
   flex-wrap: wrap;
 }
 
-/* ورودی‌ها */
-.form-group input {
+ .form-group input {
   flex: 2;
   padding: 10px 12px;
   border: 1px solid #ffffff;
@@ -37,8 +32,7 @@
 box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
 }
 
-/* دکمه‌ها */
-.form-group button {
+ .form-group button {
   flex: 1;
   padding: 10px 12px;
   background: #2356fe;
@@ -56,8 +50,7 @@ box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
   transform: scale(0.9);
  }
 
-/* لینک close */
-.close-link {
+ .close-link {
   display: block;
   text-align: center;
   margin-top: 20px;

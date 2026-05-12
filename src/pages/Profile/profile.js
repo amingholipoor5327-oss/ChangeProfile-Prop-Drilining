@@ -27,15 +27,15 @@ export const Profile = (props) => {
 
            <div className="stats">
             <div>
-              <span className="num">۱,۲۴۷</span>
+              <span className="num">{props.Follower}</span>
               <span>دنبال‌کننده</span>
             </div>
             <div>
-              <span className="num">۳۵۶</span>
+              <span className="num">{props.Follow}</span>
               <span>دنبال‌شونده</span>
             </div>
             <div>
-              <span className="num">12</span>
+              <span className="num">{props.Project}</span>
               <span>پروژه</span>
             </div>
           </div>
