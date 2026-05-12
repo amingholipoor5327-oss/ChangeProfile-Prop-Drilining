@@ -1,14 +1,9 @@
-body{
-    min-height: 100vh;
-    background:linear-gradient(135deg , rgb(114, 114, 239) , rgb(47, 64, 144));
-}
-
 .dashboard {
   max-width: 900px;
   margin: 50px auto;
   padding: 20px;
   font-family: 'Vazir', 'B Nazanin', sans-serif;
-  background: linear-gradient(120deg, #f6f9fc 0%, #eef2f7 100%);
+  background: linear-gradient(120deg, #75b6f7 0%, #3c3c3c 100%);
   min-height: 100vh;
   border-radius: 10px;
 }

@@ -1,0 +1,77 @@
+ /* Change.css */
+
+/* ظرف اصلی */
+.change-container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 25px;
+  background: #001e51;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  font-family: 'Vazir', 'B Nazanin', sans-serif;
+}
+
+/* هر فیلد */
+.form-group {
+  margin-bottom: 20px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+/* ورودی‌ها */
+.form-group input {
+  flex: 2;
+  padding: 10px 12px;
+  border: 1px solid #ffffff;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  transition: 0.2s;
+}
+
+.form-group input:focus {
+  outline: none;
+  border-color: #ff0026;
+box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.1);
+}
+
+/* دکمه‌ها */
+.form-group button {
+  flex: 1;
+  padding: 10px 12px;
+  background: #2356fe;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 14px;
+  font-family: inherit;
+  cursor: pointer;
+  transition: 0.6s;
+}
+
+.form-group button:hover {
+  background: hsl(229, 90%, 58%);
+  transform: scale(0.9);
+ }
+
+/* لینک close */
+.close-link {
+  display: block;
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
+  background: #f5f5f5;
+  color: #333;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+  transition: 0.6s;
+}
+
+.close-link:hover {
+  background: #e5e5e577;
+  transform: translateY(-5px);
+  color: #ffffff;
+}
