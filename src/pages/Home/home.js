@@ -1,22 +1,25 @@
 import "./Home.css";
 import { Link } from "react-router-dom";
+import { useContext } from "react";
+import { ProfileContext } from "../../App";
 export const Home = (props) => {
+  const {name, follower, project}= useContext(ProfileContext)
   return (
     <div className="dashboard">
       <div className="welcome-card">
-        <h2>سلام {props.UserName} 👋</h2>
+        <h2>سلام { name} 👋</h2>
         <p>خوش برگشتی! امروز چیکار می‌خوای انجام بدی؟</p>
       </div>
 
       <div className="stats-grid">
         <div className="stat-card">
           <span>📁</span>
-          <h3>۱۲</h3>
+          <h3>{project}</h3>
           <p>پروژه</p>
         </div>
         <div className="stat-card">
           <span>👥</span>
-          <h3>۱,۲۴۷</h3>
+          <h3>{follower}</h3>
           <p>دنبال‌کننده</p>
         </div>
         <div className="stat-card">

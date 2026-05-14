@@ -1,41 +1,44 @@
 import './Profile.css';
 import { Link } from 'react-router-dom';
 import Image from "./image/photo_2025-12-27_10-42-20.jpg"
+import { ProfileContext } from '../../App';
+import { useContext } from 'react';
+export const Profile = () => {
+  const {name, email, addres, github, follow , follower, project ,avatar} = useContext(ProfileContext)
 
-export const Profile = (props) => {
   return (
     <div className="profile-container">
       <div className="profile-card">
          <div className="profile-avatar">
         <img 
-          src={props.avatar || Image} 
+          src={ avatar || Image} 
            alt="Profile"
         />
         </div>
 
          <div className="profile-info">
-          <h2> {props.UserName}  </h2>
-          <p className="username">{props.Github}</p>
+          <h2> {name}  </h2>
+          <p className="username">{github}</p>
           <p className="bio">
             توسعه‌دهنده فرانت‌اند | React و JavaScript
           </p>
           
           <div className="details">
-            <p>📧{props.Email} </p>
-            <p>📍{props.Addres}  </p>
+            <p>📧{email} </p>
+            <p>📍{addres}  </p>
            </div>
 
            <div className="stats">
             <div>
-              <span className="num">{props.Follower}</span>
+              <span className="num">{follower}</span>
               <span>دنبال‌کننده</span>
             </div>
             <div>
-              <span className="num">{props.Follow}</span>
+              <span className="num">{follow}</span>
               <span>دنبال‌شونده</span>
             </div>
             <div>
-              <span className="num">{props.Project}</span>
+              <span className="num">{project}</span>
               <span>پروژه</span>
             </div>
           </div>
