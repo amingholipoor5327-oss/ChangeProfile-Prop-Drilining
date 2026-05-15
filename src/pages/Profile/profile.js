@@ -45,7 +45,7 @@ export const Profile = () => {
 
            <div className="buttons">
             <Link to={"/change"}> <button className="btn-edit">ویرایش پروفایل</button></Link>
-            <button className="btn-setting">تنظیمات</button>
+            <Link to={"/settings"}><button className="btn-setting">تنظیمات</button></Link>
           </div>
         </div>
       </div>

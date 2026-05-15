@@ -6,6 +6,7 @@ import { About } from "./pages/About/about";
 import { Profile } from "./pages/Profile/profile";
 import { Nav } from "./Nav/Nav";
 import { Change } from "./Change-prof/ChangeProfile"; 
+import { Settings } from "./Setting/setting";
 export const ProfileContext = createContext()
  function App() {
   const [name , setName] = useState("amin-gholipour")
@@ -35,7 +36,9 @@ export const ProfileContext = createContext()
           <Route path="/About" element={<About></About>}></Route>
           <Route path="/Profile" element={<Profile ></Profile>}></Route>
           <Route path="/change" element={<Change></Change>}></Route>
-        </Routes>
+          <Route path="/settings" element={<Settings></Settings>}></Route>
+          <Route path="*" element={<div>Not Found 404!</div>}></Route>
+         </Routes>
        </Router>
        </ProfileContext.Provider>
     </div>

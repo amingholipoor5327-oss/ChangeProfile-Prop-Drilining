@@ -1,0 +1,235 @@
+.settings-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  transition: all 0.3s ease;
+  font-family: 'Vazir', 'B Nazanin', sans-serif;
+}
+
+.settings-container.dark {
+  background: #1a1a2e;
+  min-height: 100vh;
+  border-radius: 0;
+}
+
+.settings-card {
+  background: white;
+  border-radius: 20px;
+  padding: 30px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+.dark .settings-card {
+  background: #16213e;
+  color: white;
+}
+
+.settings-card h1 {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 28px;
+}
+
+.setting-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+  transition: 0.2s;
+}
+
+.dark .setting-item {
+  border-bottom-color: #2a2a4a;
+}
+
+.setting-item:hover {
+  background: #f9f9f9;
+  padding-left: 10px;
+}
+
+.dark .setting-item:hover {
+  background: #1e2a4a;
+}
+
+.setting-info {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+}
+
+.setting-info span:first-child {
+  font-size: 22px;
+}
+
+.toggle-btn {
+  padding: 8px 20px;
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  background: #dc3545;
+  color: white;
+  transition: 0.3s;
+}
+
+.toggle-btn.active {
+  background: #28a745;
+}
+
+.language-select {
+  padding: 8px 15px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  background: white;
+  cursor: pointer;
+  font-family: inherit;
+}
+
+.dark .language-select {
+  background: #2a2a4a;
+  color: white;
+  border-color: #444;
+}
+
+.info-value {
+  color: #666;
+  font-size: 14px;
+  background: #f0f0f0;
+  padding: 5px 12px;
+  border-radius: 15px;
+}
+
+.dark .info-value {
+  background: #2a2a4a;
+  color: #aaa;
+}
+
+.secondary-btn {
+  padding: 8px 20px;
+  background: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.danger {
+  border-bottom-color: #ff6b6b;
+}
+
+.danger-btn {
+  padding: 8px 20px;
+  background: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.danger-btn:hover {
+  background: #c82333;
+  transform: scale(1.05);
+}
+
+.setting-actions {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin-top: 30px;
+  flex-wrap: wrap;
+}
+
+.save-btn, .logout-btn, .back-btn {
+  padding: 12px 25px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: bold;
+  transition: 0.2s;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.save-btn {
+  background: #007bff;
+  color: white;
+}
+
+.save-btn:hover {
+  background: #0056b3;
+  transform: translateY(-2px);
+}
+
+.logout-btn {
+  background: #6c757d;
+  color: white;
+}
+
+.logout-btn:hover {
+  background: #5a6268;
+  transform: translateY(-2px);
+}
+
+.back-btn {
+  background: #28a745;
+  color: white;
+}
+
+.back-btn:hover {
+  background: #218838;
+  transform: translateY(-2px);
+}
+
+ .modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal {
+  background: white;
+  padding: 30px;
+  border-radius: 20px;
+  text-align: center;
+  max-width: 400px;
+}
+
+.dark .modal {
+  background: #1e2a4a;
+  color: white;
+}
+
+.modal button {
+  margin: 10px;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .settings-container {
+    margin: 20px;
+    padding: 10px;
+  }
+  
+  .settings-card {
+    padding: 20px;
+  }
+  
+  .setting-item {
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+  }
+}
